@@ -77,26 +77,53 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
     background-color: var(--second-color);
-    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+    z-index: 1000;
 }
 
-.header .flex .navbar{
+.header .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
-    justify-content: space-between;
     padding: 1.5rem 2rem;
 }
 
-.header .flex .logo {
-    margin-right: 3rem;
-    margin-left: 8rem;
+.header .flex .logo img {
+    height: 5rem;
+    padding-left: 5rem;
 }
 
-.header .flex .logo img{
-    height: 4.5rem;
+.header .flex .navbar {
+    padding-right: 5rem;
+}
+
+.header .flex .navbar a {
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    text-decoration: none;
+    font-family: poppins-reguler;
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--third-color);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
 }
 
 .header .flex .nav-links {
@@ -122,12 +149,10 @@ html {
     color: var(--third-color);
 }
 
-#menu-btn {
-    display: none;
-    font-size: 2.5rem;
-    color: var(--white);
-    cursor: pointer;
-  }
+.header .flex .navbar.active{
+    background-color: var(--second-color);
+    display: block;
+}
 
 /* HOME */
 .home-bg {
@@ -509,16 +534,39 @@ html {
     opacity: 1;
 }
 
+@-webkit-keyframes animate {
+    0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    }
+}
+
+@keyframes animate {
+    0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    }
+}
+
+@media (max-width: 1100px) {
+    
+}
 @media (max-width: 768px) {
     #menu-btn {
-      display: inline-block;
-      transition: 0.2s linear;
+        display: inline-block;
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
     }
-  
     #menu-btn.fa-times {
-      transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 
+    .header .flex .logo img {
+        height: 5rem;
+        padding-left: 0;
+    }
+    
     .header .flex .navbar {
         position: absolute;
         top: 99%;
@@ -529,16 +577,78 @@ html {
         border-bottom: var(--border);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: 0.2s linear;
-      }
-    
-      .header .flex .navbar.active {
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+    }
+    .header .flex .navbar.active {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      }
+    }
     
-      .header .flex .navbar a {
+    .header .flex .navbar a {
         display: block;
         margin: 2rem;
-      }
+    }
+
+    .home-bg .home .content h3 {
+        font-size: 4rem;
+        color: var(--black);
+        font-family: lobster-reguler;
+    }
+
+    .home-bg .home .content p {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        color: var(--black);
+        line-height: 2;
+        font-family: inter-reguler;
+    }
+
+    .home-bg .home {
+        margin: 0 3rem;
+    }
+    
+    .recipe {
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+        padding-top: 4rem;
+    }
+    
+    .recipe h3 {
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        margin-bottom: 4rem;
+        font-family: lobster-reguler;
+        font-size: 3.5rem;
+    }
+    
+    .recipe .button-recipe {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .card .content .details h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #45f3ff;
+        line-height: 10rem;
+        font-family: 'Poppins' , sans-serif;
+    }
+    
+    .card .content .details p {
+        color: #fff;
+        opacity: 0;
+        transition: 0.5s;
+        font-family: 'Poppins' , sans-serif;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+    width: 90%;
+    }
 }
