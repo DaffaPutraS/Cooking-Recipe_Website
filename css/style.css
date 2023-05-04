@@ -164,11 +164,12 @@ html {
     font-size: 1.5rem;
     padding: 0.9rem 2.5rem;
     font-family: poppins-reguler;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .btn:hover {
     background-color: var(--fourth-color);
+    color: var(--white);
 }
 
 /* ABOUT */
@@ -246,6 +247,17 @@ html {
     font-size: 1.6rem;
     color: var(--light-color);
     margin: 1rem 0;
+    text-decoration: none;
+}
+
+.footer .box-container .box p a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
 }
 
 .footer .credit {
@@ -261,6 +273,15 @@ html {
     color: var(--main-color);
 }
 
+.footer .credit a i {
+    color: var(--light-color);
+}
+
+.footer .credit a i:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 /* CARD RECIPE HOME */
 .recipe {
     margin-top: 10rem;
@@ -273,7 +294,7 @@ html {
     justify-content: center;
     position: relative;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     font-family: lobster-reguler;
     font-size: 5rem;
 }
@@ -468,6 +489,12 @@ html {
     transition: 0.5s;
     font-family: 'Poppins' , sans-serif;
     font-size: 1.3em;
+    border-radius: 7px;
+}
+
+.card .content .details a:hover {
+    background: var(--fourth-color);
+    color: var(--white);
 }
 
 .card:hover .content .details p,.card:hover .content .details a {
