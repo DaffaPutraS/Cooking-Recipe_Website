@@ -1,52 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing</title>
-    <style>
-        /* Reset default margin and padding */
-        * {
-          margin: 0;
-          padding: 0;
-        }
-        
-        /* Style the navbar */
-        .navbar {
-          background-color: blue; /* Set background color to blue */
-          display: flex; /* Use flexbox to arrange items */
-          justify-content: space-between; /* Align items to the left and right */
-          align-items: center; /* Vertically center items */
-          padding: 1rem; /* Add some padding to the navbar */
-        }
-        
-        /* Style the navbar links */
-        .navbar a {
-          color: white; /* Set text color to white */
-          text-decoration: none; /* Remove underline */
-          margin-left: 1rem; /* Add some space between links */
-          font-weight: bold; /* Set font weight to bold */
-        }
-        
-        /* Style the logo */
-        .logo {
-          font-size: 1.5rem; /* Set font size */
-          font-weight: bold; /* Set font weight to bold */
-          color: white; /* Set text color to white */
-        }
-      </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe | Cooking Recipe</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="/css/style2.css">
+
+  <!-- Icon Title Link-->
+  <link rel="Icon" href="image/logo/Cooking_recipe.png" type="image/x-icon">
+
+  <!-- Font Awesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Logo</div>
-        <div>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
-    <a href="/index.html">Pindah</a>
+  
+  <!-- HEADER STARTS -->
+  <header class="header">
+    <section class="flex">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="image/logo/logo_font_putih_resize4.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#recipe">Recipe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+  </header>
+<!-- HEADER ENDS -->
+
+
+<!-- RECIPE STARTS -->
+  <div class="recipe-bg">
+    <div class="title-recipe" id="recipe">
+      <h3>Recipe</h3>
+    </div>
+    <section class="recipe2">
+      <div class="card">
+        <img src="/image/foto_makanan/index1/pan_seared_salmon.jpg" alt="Gambar">
+        <h3>Pan Seared Salmon</h3>
+        <p>Ingredients <br>
+          • 4 salmon fillets (skin on) <br>
+          • Salt and black pepper <br>
+          • 2 tbsp olive oil <br>
+          • 2 tbsp butter <br>
+          • 2 cloves garlic, minced <br>
+          • 1 tbsp chopped fresh parsley <br>
+          • Lemon wedges, for serving</p>
+        <p>Steps<br>
+          → 1. Pat the salmon fillets dry with paper towels and season both sides with salt and black pepper.<br>
+          → 2. Heat the olive oil in a large nonstick skillet over medium-high heat.<br>
+          → 3. Add the salmon fillets, skin side down, to the skillet and cook for about 4-5 minutes until the skin is crispy and browned.<br>
+          → 4. Flip the salmon fillets over and continue cooking for another 2-3 minutes until the flesh is cooked through.<br>
+          → 5. Remove the salmon fillets from the skillet and set aside on a plate.<br>
+          → 6. Reduce the heat to medium and add the butter to the skillet. Once melted, add the minced garlic and sauté for about 30 seconds until fragrant.<br>
+          → 7. Pour the garlic butter over the salmon fillets.<br>
+          → 8 Garnish the salmon fillets with chopped parsley and serve with lemon wedges on the side.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/grilled_pizza.jpg" alt="Gambar">
+        <h3>Grilled Pizza</h3>
+        <p>Ingredients <br>
+          • Pizza dough<br>
+          • Olive oil<br>
+          • Pizza sauce<br>
+          • Mozzarella cheese, shredded<br>
+          • Toppings of your choice (e.g. sliced tomatoes, cooked sausage, sliced onions, sliced peppers, etc.)<br>
+          • Salt and black pepper<br>
+          • Flour or cornmeal for dusting</p>
+        <p>Steps<br>
+          → 1. Preheat your grill to medium-high heat (about 400-450°F/200-230°C).<br>
+          → 2. Divide the pizza dough into portions, and roll out each portion into a thin, round shape.<br>
+          → 3. Brush both sides of the pizza dough with olive oil.<br>
+          → 4. Sprinkle a bit of flour or cornmeal onto a baking sheet, and place the pizza dough rounds onto the sheet.<br>
+          → 5. Once the grill is hot, use tongs to carefully place the pizza dough rounds onto the grill grates.<br>
+          → 6. Cook the pizza dough for about 2-3 minutes on one side, or until it starts to form grill marks and is slightly browned.<br>
+          → 7. Use tongs to flip the pizza dough over and reduce the heat to low.<br>
+          → 8. Add pizza sauce, shredded mozzarella cheese, and your desired toppings onto the cooked side of the pizza.<br>
+          → 9. Sprinkle some salt and black pepper over the toppings.<br>
+          → 10. Close the lid of the grill and let the pizza cook for another 5-6 minutes, or until the cheese is melted and bubbly and the crust is crispy.<br>
+          → 11. Use tongs to remove the pizza from the grill and let it rest for a minute or two.<br>
+          → 12. Slice the pizza and serve it hot.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/fish_tacos al_pastor.jpg" alt="Gambar">
+        <h3>fish Tacos al Pastor</h3>
+        <p>Ingredients <br>
+          For the marinade:<br>
+          • 2 cloves garlic, minced<br>
+          • 2 tbsp achiote paste<br>
+          • 1 tsp smoked paprika<br>
+          • 1 tsp ground cumin.<br>
+          • 1 tsp dried oregano<br>
+          • 1/2 tsp salt<br>
+          • 1/4 tsp black pepper<br>
+          • 1/4 cup pineapple juice<br>
+          • 1/4 cup orange juice<br>
+          • 1/4 cup lime juice<br><br>
+          
+          For the tacos:<br>
+          • 1 lb firm white fish, such as mahi mahi or cod, cut into bite-sized pieces<br>
+          • 8-10 small corn tortillas<br>
+          • 1 cup diced pineapple<br>
+          • 1/2 cup diced red onion<br>
+          • 1/4 cup chopped fresh cilantro<br>
+          • Lime wedges, for serving</p>
+        <p>Steps <br>
+          → 1. In a large bowl, whisk together the minced garlic, achiote paste, smoked paprika, cumin, oregano, salt, and black pepper until combined.<br>
+          → 2. Add the pineapple juice, orange juice, and lime juice to the bowl and whisk again until well combined.<br>
+          → 3. Add the fish pieces to the marinade and toss to coat well. Cover and refrigerate for at least 1 hour, or up to 4 hours.<br>
+          → 4. Preheat a grill or grill pan to medium-high heat.<br>
+          → 5. Remove the fish from the marinade and discard the remaining marinade.<br>
+          → 6. Grill the fish pieces for 3-4 minutes per side, or until cooked through and lightly charred.<br>
+          → 7. Warm the corn tortillas on the grill for about 30 seconds per side.<br>
+          → 8. Assemble the tacos by placing some fish pieces onto each tortilla.<br>
+          → 9. Top the fish with diced pineapple, diced red onion, and chopped cilantro.<br>
+          → 10. Serve the tacos hot with lime wedges on the side.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/chocolate molten eggs.jpg" alt="Gambar">
+        <h3>Chocolate Molten Eggs</h3>
+        <p>Ingredients <br>
+          • 8 large eggs<br>
+          • 1 cup semisweet chocolate chips<br>
+          • 1/2 cup unsalted butter<br>
+          • 1/4 cup granulated sugar<br>
+          • 1/4 cup all-purpose flour<br>
+          • 1/2 tsp vanilla extract<br>
+          • Pinch of salt</p>
+        <p>Steps <br>
+          → 1. Preheat your oven to 375°F (190°C).<br>
+          → 2. Melt the chocolate chips and butter together in a double boiler or in the microwave, stirring until smooth.<br>
+          → 3. In a mixing bowl, whisk the eggs and sugar together until well combined.<br>
+          → 4. Add the flour, vanilla extract, and salt to the egg mixture and whisk until smooth.<br>
+          → 5. Slowly pour the melted chocolate mixture into the egg mixture, whisking continuously until the mixture is well combined.<br>
+          → 6. Grease 8 small ramekins or custard cups with butter.<br>
+          → 7. Pour the chocolate mixture into the ramekins, filling them about three-quarters full.<br>
+          → 8. Place the ramekins on a baking sheet and bake for 10-12 minutes, or until the edges are set but the centers are still slightly wobbly.<br>
+          → 9. Remove the ramekins from the oven and allow them to cool for a few minutes.<br>
+          → 10. Carefully run a knife around the edges of each ramekin to loosen the chocolate eggs.<br>
+          → 11. Place a plate over each ramekin and invert it to remove the chocolate egg.<br>
+          → 12. Serve the Chocolate Molten Eggs warm, garnished with fresh berries or a dusting of powdered sugar.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/chocolate truffle.jpg" alt="Gambar">
+        <h3>Chocolate Truffle</h3>
+        <p>Ingredients <br>
+          • 8 oz (225g) semisweet chocolate, chopped<br>
+          • 1/2 cup (120ml) heavy cream<br>
+          • 1/4 cup (56g) unsalted butter, cut into small pieces<br>
+          • 1 tsp vanilla extract<br>
+          • Cocoa powder or chopped nuts for rolling (optional)</p>
+        <p>Steps <br>
+          → 1. Place the chopped chocolate in a large heatproof bowl.<br>
+          → 2. In a small saucepan, heat the heavy cream over medium heat until it comes to a simmer.<br>
+          → 3. Pour the hot cream over the chocolate and let it sit for 1-2 minutes.<br>
+          → 4. Add the butter and vanilla extract to the bowl and whisk everything together until the chocolate is melted and the mixture is smooth.<br>
+          → 5. Cover the bowl with plastic wrap and chill the mixture in the refrigerator for 2-3 hours, or until it is firm enough to shape.<br>
+          → 6. Using a spoon or a small scoop, scoop out small balls of the chocolate mixture and roll them into truffle shapes. If desired, roll the truffles in cocoa powder or chopped nuts to coat them.<br>
+          → 7. Place the truffles on a baking sheet lined with parchment paper and chill them in the refrigerator for another 30 minutes to set.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/floating island.jpg" alt="Gambar">
+        <h3>Floating Island</h3>
+        <p>Ingredients <br>
+          For the meringues:<br>
+          • 4 egg whites<br>
+          • 1/4 cup (50g) granulated sugar<br>
+          • 1/2 tsp vanilla extract<br>
+          • Pinch of salt<br><br>
+          
+          For the custard:<br>
+          • 2 cups (480ml) whole milk<br>
+          • 1/2 cup (100g) granulated sugar<br>
+          • 4 egg yolks<br>
+          • 1 tsp vanilla extract<br>
+          • Pinch of salt<br><br>
+          
+          For the caramel sauce (optional):<br>
+          • 1/2 cup (100g) granulated sugar<br>
+          • 2 tbsp water<br>
+          • 1/4 cup (60ml) heavy cream<br>
+          • Pinch of salt</p>
+        <p>Steps <br>
+          → 1. To make the meringues, preheat your oven to 300°F (150°C) and line a baking sheet with parchment paper.<br>
+          → 2. In a mixing bowl, beat the egg whites with an electric mixer until they form soft peaks.<br>
+          → 3. Gradually add the sugar, vanilla extract, and salt, and continue beating until the egg whites form stiff, glossy peaks.<br>
+          → 4. Using a spoon or a piping bag, drop or pipe the meringue mixture into 6-8 small mounds onto the prepared baking sheet.<br>
+          → 5. Bake the meringues for about 20-25 minutes, or until they are lightly golden and crisp on the outside.<br>
+          → 6. Remove the meringues from the oven and let them cool completely.<br>
+          → 7. To make the custard, heat the milk in a saucepan over medium heat until it comes to a simmer.<br>
+          → 8. In a mixing bowl, whisk together the sugar, egg yolks, vanilla extract, and salt until well combined.<br>
+          → 9. Gradually pour the hot milk into the egg yolk mixture, whisking continuously.<br>
+          → 10. Return the custard mixture to the saucepan and cook it over low heat, stirring constantly, until it thickens enough to coat the back of a spoon.<br>
+          → 11. Remove the custard from the heat and let it cool to room temperature.<br>
+          → 12. To make the caramel sauce, combine the sugar and water in a saucepan and heat it over medium heat until the sugar dissolves.<br>
+          → 13. Increase the heat to high and cook the sugar mixture, without stirring, until it turns golden brown.<br>
+          → 14. Remove the saucepan from the heat and carefully stir in the heavy cream and salt until well combined.<br>
+          → 15. To assemble the dessert, spoon some of the custard into each serving dish.<br>
+          → 16. Place one or two meringues on top of the custard in each dish.<br>
+          → 17. Spoon a little more custard over the meringues to cover them.<br>
+          → 18. Drizzle some of the caramel sauce over each dessert, if desired.<br>
+          → 19. Chill the desserts in the refrigerator for at least 1 hour before serving.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/chicken_karage.jpg" alt="Gambar">
+        <h3>Chicken Karage</h3>
+        <p>Ingredients <br>
+          • Garlic, 4 cloves <br>
+          • Ginger, 2 cm <br>
+          • Salt, 1 tsp <br>
+          • Pepper, 1/2 teaspoon <br>
+          • Soy sauce, 1 tablespoon <br>
+          • Potato flour, 100 grams <br>
+          • Corn flour, 100 grams <br>
+          • Chicken fillet, 500 grams <br>
+          • Right amount of oil</p>
+        <p>Steps <br>
+          → 1. Thinly slice the garlic and ginger and grind them. Mix with salt, pepper and soy sauce. <br>
+          → 2. Cut the chicken meat into small pieces according to taste, then add it to the spice mixture and mix well. Let stand for 30 minutes until the flavors meld. <br>
+          → 3. Mix potato starch and cornstarch in a separate bowl. Roll the chicken pieces in the flour mixture until evenly distributed. <br>
+          → 4. Heat oil in a pan, then fry the chicken pieces until brown and cooked evenly. Lift and drain. <br>
+          → 5. Chicken karage is ready to be served as a main dish or as a snack. Serve with chili sauce or mayonnaise as a complement. <br>
+          → 6. Enjoy the delicious chicken karage!</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/paella.jpg" alt="Gambar">
+        <h3>Paella</h3>
+        <p>Ingredients <br>
+          • Garlic, 2 cloves, finely chopped <br>
+          • Peppers, 1 fruit, thinly sliced <br>
+          • Tomatoes, 2 pieces, diced <br>
+          • Paella rice or medium grain rice, 500 grams <br>
+          • Chicken stock, 1 liter <br>
+          • Peas, 100 grams <br>
+          • Shrimp, 250 grams, peeled and removed the head and skin <br>
+          • Scallops, 250 grams <br>
+          • Saffron, 1 tsp <br>
+          • Salt to taste <br>
+          • Onion, 1 pc, finely chopped <br>
+          • Olive oil, 3 tablespoons.</p>
+        <p>Steps <br>
+          → 1. Heat olive oil in a paella pan or large flat skillet over medium heat. <br>
+          → 2. Sauté the onions and garlic until fragrant. <br>
+          → 3. Add the peppers and tomatoes, stir well and cook until the tomatoes are soft. <br>
+          → 4. Add the rice and stir well with the spices until the rice is perfectly coated. <br>
+          → 5. Add the chicken broth and saffron, stir well, and let it simmer. <br>
+          → 6. After boiling, add the prawns, clams, and peas, stir well, and let everything cook and the water is completely absorbed. <br>
+          → 7. If the rice is still not cooked and lacks water, add a little stock and continue to cook until the rice is cooked. <br>
+          → 8. Remove from the heat and let the Paella rest for a few minutes before serving. <br>
+          → 9. Serve warm Paella with lemon wedges and other dishes according to taste.</p>
+      </div>
+
+      <div class="card">
+        <img src="/image/foto_makanan/index1/tortilla.jpg" alt="Gambar">
+        <h3>Tortilla</h3>
+        <p>Ingredients <br>
+          • Corn flour or wheat flour, 2 cups <br>
+          • Warm water, 1 cup <br>
+          • Salt, 1 tsp <br>
+          • Vegetable oil, 2 tablespoons.</p>
+        <p>Steps <br>
+          → 1. Mix cornstarch or wheat flour with salt in a large bowl. <br>
+          → 2. Add warm water little by little while continuing to stir until the dough becomes soft and not sticky to your hands. <br>
+          → 3. Place the dough on a clean surface and roll out to 1/4 inch thick. <br>
+          → 4. Heat a frying pan or flat griddle over medium heat and add vegetable oil. <br>
+          → 5. Use a knife or cookie cutter to cut the dough into the desired round shape. <br>
+          → 6. Place the tortillas in the fryer or skillet and fry for about 1 minute on each side or until the tortillas are crisp and lightly browned. <br>
+          → 7. Remove the tortilla from the fryer or skillet and let it cool slightly before serving or using it in other dishes.</p>
+      </div>
+    </section>
+  </div>
+<!-- RECIPE ENDS -->
+
+
+<!-- CONTACT AND FOOTER STARTS -->
+<!-- CONTACT AND FOOTER ENDS -->
+
+
 </body>
 </html>

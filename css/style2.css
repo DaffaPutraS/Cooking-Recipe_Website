@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Poppins&display=swap');
+
+:root {
+    --main-color: #26A9C6;
+    --second-color: #2598b2;
+    --third-color: #00d0ff;
+    --fourth-color: #166071;
+    --fifth-color: #19758a;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* Font Family */
+@font-face {
+    font-family: poppins-reguler;
+    src: url(/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: lobster-reguler;
+    src: url(/font/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter-reguler;
+    src: url(/font/Inter-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Selection Block */
+*::-moz-selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+/* HTML */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+/* HEADER */
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--second-color);
+    box-shadow: var(--box-shadow);
+}
+
+.header .flex .navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.header .flex .logo {
+    margin-right: 3rem;
+    margin-left: 8rem;
+}
+
+.header .flex .logo img{
+    height: 4.5rem;
+}
+
+.header .flex .nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 9rem;
+}
+
+.header .flex .nav-links li {
+    margin-left: 2rem;
+    margin-top: 0.1rem;
+}
+
+.header .flex .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: poppins-reguler;
+}
+
+.header .flex .nav-links li a:hover {
+    text-decoration: underline;
+    color: var(--third-color);
+}
+
+
+/* RECIPE */
+.recipe-bg {
+    background: url(/image/background_image/background_papan_kayu.png) no-repeat center center fixed;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.recipe-bg .title-recipe {
+    display: flex;
+    justify-content: center;
+}
+
+.title-recipe h3 {
+    font-size: 5rem;
+    font-family: Lobster-reguler;
+    padding-top: 4.7rem;
+}
+
+.recipe2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.4rem 0 0 0;
+    padding-bottom: 5rem;
+}
+
+.recipe2 .card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 100rem;
+    border-radius: 10px;
+    border: 2px solid #28a7c3;
+    overflow: hidden;
+    margin: 4rem;
+    background-color: var(--fifth-color);
+}
+
+.recipe2 .card:hover {
+    box-shadow: 0 0 50px 0 var(--fourth-color);
+    transition: 0.3s;
+}
+
+.recipe2 .card img {
+    width: 100%;
+    height: 40rem;
+}
+
+.recipe2 .card h3 {
+    padding: 0 4rem;
+    font-size: 2.7rem;
+    margin: 1.5rem 0;
+    color: var(--third-color);
+    font-family: poppins-reguler;
+}
+
+.recipe2 .card p {
+    padding: 0 4rem;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-family: inter-reguler;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+    width: 90%;
+    }
+}
