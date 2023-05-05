@@ -51,7 +51,7 @@
     color: var(--white);
     font-size: 1.8rem;
     padding: 1rem 3rem;
-  }
+}
 
 /* Selection Block */
 *::-moz-selection {
@@ -94,8 +94,7 @@ html {
     left: 0;
     right: 0;
     background-color: var(--second-color);
-    -webkit-box-shadow: var(--box-shadow);
-            box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
     z-index: 1000;
 }
 
@@ -103,12 +102,8 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
     padding: 1.5rem 2rem;
 }
@@ -235,149 +230,7 @@ html {
     font-family: inter-reguler;
 }
 
-/*contactus.html*/
-
-.contactus .row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        gap: 2rem;
-      }
-      
-      .contactus .row .image {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 20rem;
-                flex: 1 1 20rem;
-      }
-      
-      .contactus .row .image img {
-        width: 70rem;
-      }
-      
-      .contactus .row form {
-        -webkit-box-flex: 1;
-            -ms-flex: 1 1 30rem;
-                flex: 1 1 30rem;
-        border: var(--border);
-        padding: 2rem;
-        text-align: center;
-      }
-      
-      .contactus .row form h3 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        color: var(--black);
-      }
-      
-      .contactus .row form .box {
-        width: 100%;
-        padding: 1.4rem;
-        font-size: 1.8rem;
-        color: var(--black);
-        border: var(--border);
-        margin: 1rem 0;
-      }
-      
-      .contactus .row form label {
-        font-size: 1.5rem;
-        font-family: lobster-reguler;
-        float: left;
-        color: var(--light-color);
-      }
-
-      /* CONTACT AND FOOTER */
-.footer {
-    margin: 0 3rem 4rem 3rem;
-}
-
-.footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap: 1.5rem;
-    align-items: flex-start;
-}
-
-.footer .box-container .box {
-    text-align: center;
-}
-
-.footer .box-container .box i {
-    font-size: 2.5rem;
-    line-height: 6rem;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    color: var(--white);
-    margin-bottom: 0.5rem;
-}
-
-.footer .box-container .box h3 {
-    margin: 1rem 0;
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.footer .box-container .box p {
-    line-height: 2rem;
-    font-size: 1.6rem;
-    color: var(--light-color);
-    margin: 1rem 0;
-    text-decoration: none;
-}
-
-.footer .box-container .box p a {
-    text-decoration: none;
-    color: var(--light-color);
-}
-
-.footer .box-container .box a:hover {
-    text-decoration: underline;
-    color: var(--main-color);
-}
-
-.footer .credit {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 2.5rem;
-    border-top: var(--border);
-    font-size: 2rem;
-    color: var(--black);
-}
-
-.footer .credit span {
-    color: var(--main-color);
-}
-
-.footer .credit a i {
-    color: var(--light-color);
-}
-
-.footer .credit a i:hover {
-    text-decoration: none;
-    color: var(--main-color);
-}
-
-@-webkit-keyframes animate {
-    0% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-    }
-  }
-  
-  @keyframes animate {
-    0% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-    }
-  }
 @media (max-width: 1100px) {
-    
     .recipe-bg .recipe2 {
         display: flex;
         justify-content: center;
@@ -386,7 +239,7 @@ html {
         margin: 0.4rem 0 0 0;
         padding-bottom: 5rem;
     }
-    
+        
     .recipe-bg .recipe2 .card {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         width: 68rem;
@@ -396,12 +249,12 @@ html {
         margin: 4rem;
         background-color: var(--fifth-color);
     }
-    
+        
     .recipe-bg .recipe2 .card img {
         width: 100%;
         height: 38rem;
     }
-    
+        
     .recipe-bg .recipe2 .card h3 {
         padding: 0 4rem;
         font-size: 2.4rem;
@@ -409,7 +262,7 @@ html {
         color: var(--third-color);
         font-family: poppins-reguler;
     }
-    
+        
     .recipe-bg .recipe2 .card p {
         padding: 0 4rem;
         font-size: 1.8rem;
@@ -422,32 +275,31 @@ html {
         font-size: 3rem;
         text-align: center;
         margin: 3%;
-      }
-      .contactus .row form h3 {
-        font-size: 2rem;
-      }
+    }
 
-      .contactus .row .image img {
+    .contactus .row form h3 {
+        font-size: 2rem;
+    }
+
+    .contactus .row .image img {
         width: 70rem;
-      }
+    }
 }
 
 @media (max-width: 768px) {
     #menu-btn {
         display: inline-block;
-        -webkit-transition: .2s linear;
         transition: .2s linear;
-      }
-      #menu-btn.fa-times {
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-      }
+    }
+        #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
 
-      .header .flex .logo img {
+    .header .flex .logo img {
         padding-left: 0;
     }
 
-      .header .flex .navbar {
+    .header .flex .navbar {
         position: absolute;
         top: 99%;
         left: 0;
@@ -455,21 +307,20 @@ html {
         background-color: var(--white);
         border-top: var(--border);
         border-bottom: var(--border);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        -webkit-transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .2s linear;
-      }
-      .header .flex .navbar.active {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      }
-      .header .flex .navbar a {
+    }
+
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a {
         display: block;
         margin: 2rem;
-      }
+    }
 
-      .recipe-bg .recipe2 {
+    .recipe-bg .recipe2 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -477,7 +328,7 @@ html {
         margin: 0.4rem 0 0 0;
         padding-bottom: 5rem;
     }
-    
+        
     .title-recipe h3 {
         font-size: 4rem;
         font-family: Lobster-reguler;
@@ -493,12 +344,12 @@ html {
         margin: 4rem;
         background-color: var(--fifth-color);
     }
-    
+        
     .recipe-bg .recipe2 .card img {
         width: 100%;
         height: 32rem;
     }
-    
+        
     .recipe-bg .recipe2 .card h3 {
         padding: 0 4rem;
         font-size: 2rem;
@@ -506,7 +357,7 @@ html {
         color: var(--third-color);
         font-family: poppins-reguler;
     }
-    
+        
     .recipe-bg .recipe2 .card p {
         padding: 0 4rem;
         font-size: 1.4rem;
@@ -514,7 +365,6 @@ html {
         color: var(--white);
         font-family: inter-reguler;
     }
-
 }
 
 @media screen and (max-width: 500px) {
