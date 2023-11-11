@@ -87,12 +87,10 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     position: relative;
     padding: 1.5rem 2rem;
 }
@@ -576,7 +574,7 @@ html {
         border-top: var(--border);
         border-bottom: var(--border);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         -webkit-transition: .2s linear;
         transition: .2s linear;
     }
